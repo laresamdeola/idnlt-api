@@ -1,4 +1,5 @@
-#### idnlt-api
+#### [idnlt-api](https://idnlt-api2.herokuapp.com/infections)
+
 i do not like this(idnlt) is an API containing information about Sexually Transmitted Diseases(STDs).
 
 #### INTRODUCTION
@@ -14,6 +15,42 @@ There are a few other key value pairs apart from symptoms that can be fetched fr
 - [x] nickName
 
 #### SAMPLE 
-Here's a brief code snippet, using Node.js as the backend with the fetch API to fetch data from the idnlt API:
+Here's a brief code snippet, using Node.js as the backend with the fetch API to fetch data from the idnlt API: 
+
+```
+***import the dependencies***
+
+import fetch from 'node-fetch'
+import express from "express"
+
+const app = express()
+
+const idnlt = "https://idnlt-api2.herokuapp.com/infections"
+
+***the aysnc function to fetch the data from the api***
+
+const fetchData = async (url) => {
+  try{
+    let response = await fetch(url)
+    let data = await response.json()
+    console.log(data)
+  } catch(error){
+    console.log(error.message)
+  }
+}
+
+***the get route***
+
+app.get('/', (req, res) => {
+  const displayData = fetchData(idnlt)
+  console.log(displayData)
+})
+
+app.listen(3000, () => {
+  console.log("Server ti wa online")
+})
+```
+
+
 
 
