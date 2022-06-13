@@ -5,7 +5,7 @@ i do not like this(idnlt) is an API containing information about Sexually Transm
 #### INTRODUCTION 🤟
 idnlt arose from the necessity to have an API whereby one can easily fetch the symptoms of different Sexually Transmitted Infections. The API is open and free to use and currently contains a total of 11 common STI's along with their associated symptoms in *men* and *women*.
 
-![idnlt]()
+![idnlt](./idnlt.jpg)
 
 #### OBJECT KEYS 🔑
 There are a few other key value pairs apart from symptoms that can be fetched from the idnlt API.
