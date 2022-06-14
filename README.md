@@ -15,6 +15,7 @@ There are a few other key value pairs apart from symptoms that can be fetched fr
 - [x] symptomsWomen
 - [x] symptomsMen
 - [x] nickName
+- [x] isThereVaccine
 
 #### SAMPLE 📙 
 
