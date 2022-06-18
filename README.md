@@ -24,7 +24,7 @@ Here's a brief code snippet, using Node.js as the backend with the fetch API to 
 ```
 ***import the dependencies***
 
-import fetch from 'node-fetch'
+import fetch from "node-fetch"
 import express from "express"
 
 const app = express()
